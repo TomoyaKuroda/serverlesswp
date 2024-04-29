@@ -43,7 +43,7 @@ if (isset($_ENV['HOST'])) {
 define( 'DB_CHARSET', 'utf8' );
 
 /** The database collate type. Don't change this if in doubt. */
-define( 'DB_COLLATE', '' );
+define( 'DB_COLLATE', 'utf8mb4_general_ci' );
 
 /**#@+
  * Authentication unique keys and salts.
@@ -116,6 +116,3 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
-
-define('MYSQL_CLIENT_FLAGS', MYSQLI_CLIENT_SSL);
-define( 'DB_COLLATE', 'utf8mb4_general_ci' );
