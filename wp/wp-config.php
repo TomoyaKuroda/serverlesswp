@@ -1,7 +1,4 @@
 <?php
-define('MYSQL_CLIENT_FLAGS', MYSQLI_CLIENT_SSL);
-define( 'DB_COLLATE', 'utf8mb4_general_ci' );
-
 /**
  * The base configuration for WordPress
  *
@@ -119,3 +116,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+
+define('MYSQL_CLIENT_FLAGS', MYSQLI_CLIENT_SSL);
+define( 'DB_COLLATE', 'utf8mb4_general_ci' );
